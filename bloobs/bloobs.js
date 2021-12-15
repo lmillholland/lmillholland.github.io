@@ -1,4 +1,4 @@
-var BLOOB_SIZE = 60;
+var BLOOB_SIZE = 50;
 var NUM_RANDOM_BLOOBS = 750;
 var IS_MOUSE_DOWN = false;
 var ratio = window.devicePixelRatio || 1;
@@ -44,7 +44,7 @@ function SpawnOrderedBloobs()
 		while (col * (BLOOB_SIZE - 6) < screen.width * ratio)
 		{
 			col++;
-			new Bloob(row * BLOOB_SIZE, col * BLOOB_SIZE, "7.5vw");
+			new Bloob(row * BLOOB_SIZE, col * BLOOB_SIZE, "8vw");
 		}
 		row++;
 	}
