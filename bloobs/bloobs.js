@@ -8,8 +8,8 @@ var IS_MOUSE_DOWN = false;
 function Start()
 {
 	ResizeElements();
-	//SpawnOrderedBloobs();
-	//SpawnChaoticBloobs();
+	SpawnOrderedBloobs();
+	SpawnChaoticBloobs();
 	$("#message").show();
 
 	$("body")
@@ -55,7 +55,7 @@ class Bloob {
 
 		$("body").append(bloob_html);
 
-		$(bloob_html).mouseover(function()
+		$(bloob_html).bind("mouseover touchstart touchmove", function()
 		{
 			if (IS_MOUSE_DOWN)
 			{
