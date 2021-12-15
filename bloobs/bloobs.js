@@ -1,7 +1,7 @@
-var BLOOB_SIZE = 50;
+var BLOOB_SIZE = 60;
 var NUM_RANDOM_BLOOBS = 1200;
 var IS_MOUSE_DOWN = false;
-var ratio = (window.devicePixelRatio || 1) + .25;
+var ratio = (window.devicePixelRatio || 1) + .5;
 
 // ================================================================================================
 // -------- Main Thread ---------------------------------------------------------------------------
@@ -44,7 +44,7 @@ function SpawnOrderedBloobs()
 		while (col * (BLOOB_SIZE - 6) < screen.width * ratio)
 		{
 			col++;
-			new Bloob(row * BLOOB_SIZE, col * BLOOB_SIZE, "8vw");
+			new Bloob(row * BLOOB_SIZE, col * BLOOB_SIZE, "10vw");
 		}
 		row++;
 	}
@@ -56,7 +56,7 @@ function SpawnChaoticBloobs()
 	{
 		var top  = (Math.random() * (screen.height * ratio + BLOOB_SIZE * 2 * ratio)) - BLOOB_SIZE;
 		var left = (Math.random() * (screen.width * ratio + BLOOB_SIZE * 2 * ratio)) - BLOOB_SIZE;
-		var font_size = (Math.random() * 8 + 10) + "vw";
+		var font_size = (Math.random() * 7 + 10) + "vw";
 		new Bloob(top, left, font_size);
 	}
 }
