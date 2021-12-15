@@ -1,5 +1,5 @@
-var BLOOB_SIZE = 40;
-var NUM_RANDOM_BLOOBS = 2000;
+var BLOOB_SIZE = 60;
+var NUM_RANDOM_BLOOBS = 1000;
 var IS_MOUSE_DOWN = false;
 var ratio = window.devicePixelRatio || 1;
 
@@ -56,7 +56,7 @@ function SpawnChaoticBloobs()
 	{
 		var top  = (Math.random() * (screen.height * ratio + BLOOB_SIZE * 2 * ratio)) - BLOOB_SIZE;
 		var left = (Math.random() * (screen.width * ratio + BLOOB_SIZE * 2 * ratio)) - BLOOB_SIZE;
-		var font_size = (Math.random() * 5 + 6) + "vw";
+		var font_size = (Math.random() * 8 + 6) + "vw";
 		new Bloob(top, left, font_size);
 	}
 }
