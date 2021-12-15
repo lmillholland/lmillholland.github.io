@@ -1,0 +1,25 @@
+body {
+	overflow: none;
+	font-family: 'Montserrat', sans-serif;
+	touch-action: none;
+	margin: 0px;
+}
+
+.bloob
+{
+	width: 5vw;
+	position: absolute;
+	font-size: 5vw;
+	cursor: default;
+	user-select: none;
+}
+
+#message
+{
+	text-align: center;
+	display: none;
+}
+
+#header
+{
+}
