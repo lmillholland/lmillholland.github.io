@@ -1,4 +1,4 @@
-var BLOOB_SIZE = 40;
+var BLOOB_SIZE = 80;
 var NUM_RANDOM_BLOOBS = 500;
 var IS_MOUSE_DOWN = false;
 
