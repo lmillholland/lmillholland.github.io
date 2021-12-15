@@ -1,7 +1,7 @@
 var BLOOB_SIZE = 50;
-var NUM_RANDOM_BLOOBS = 750;
+var NUM_RANDOM_BLOOBS = 1200;
 var IS_MOUSE_DOWN = false;
-var ratio = window.devicePixelRatio || 1;
+var ratio = (window.devicePixelRatio || 1) + .25;
 
 // ================================================================================================
 // -------- Main Thread ---------------------------------------------------------------------------
